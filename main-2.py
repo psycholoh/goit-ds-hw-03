@@ -56,8 +56,9 @@ while True:
 
 
 
-with open("output/quotes.json", "w", encoding="utf-8") as f:
+with open("quotes.json", "w", encoding="utf-8") as f:
     json.dump(quotes, f, ensure_ascii=False, indent=2)
 
-with open("output/authors.json", "w", encoding="utf-8") as f:
+with open("authors.json", "w", encoding="utf-8") as f:
     json.dump(list(authors_data.values()), f, ensure_ascii=False, indent=2)
+
