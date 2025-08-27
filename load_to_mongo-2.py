@@ -6,7 +6,7 @@ import os
 
 MONGO_URI = os.getenv(
     "MONGO_URI",
-    "mongodb+srv://goitlearn:GZIKceTmWR2tGk8B@cluster0.ebwl04i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://goitlearn:@cluster0.ebwl04i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )
 client = MongoClient(MONGO_URI)
 db = client["quotes_db"]
@@ -22,3 +22,4 @@ db.authors.delete_many({})
 
 
 print("✅ Данные успешно загружены в MongoDB Atlas")
+
